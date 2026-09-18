@@ -17,12 +17,14 @@ int main() {
             scanf("%d", &mat1[i][j]);
         }
     }
+
     printf("Enter second matrix:\n");
     for (int i = 0; i < rows2; i++) {
         for (int j = 0; j < cols2; j++) {
             scanf("%d", &mat2[i][j]);
         }
     }
+
     int res[rows][cols2];
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols2; j++) {
@@ -32,11 +34,14 @@ int main() {
             }
         }
     }
+
     printf("Resultant Matrix:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols2; j++) {
             printf("%d\t", res[i][j]);
         }
+
         printf("\n");
+
     }
 }
