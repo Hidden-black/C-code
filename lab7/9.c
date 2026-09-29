@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(void) {
-    printf("Test\n");
 
     int a = 12, b = 25;
     printf("Pre Swap: %d %d\n", a, b);
