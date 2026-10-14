@@ -34,7 +34,7 @@ int main() {
     printf("Resultant Matrix:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols2; j++) {
-            printf("%d\t", res[i][j]);
+            printf("%d\t ", res[i][j]);
         }
         printf("\n");
     }
