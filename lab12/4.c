@@ -10,6 +10,10 @@ int main() {
     struct dates val;
     printf("Enter current date (DD MM YYYY): ");
     scanf("%d %d %d", &val.day, &val.month, &val.year);
+    if ((0 > val.month) || (val.month > 12)) {
+        printf("Invalid input\n");
+        return 0;
+    }
     int dim = days(val.month, val.year);
     int ndate = val.day + 45;
     while (ndate > days(val.month, val.year)) {
